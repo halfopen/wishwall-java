@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.halfopen.ssm.dao.MessageDao">
+
+    <resultMap id="MessageResultMap" type="com.halfopen.ssm.bean.Message">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="userid" property="userid" jdbcType="SMALLINT" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="content" property="content" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getMessages"  resultMap="MessageResultMap">
+        select * from message limit 0,20
+    </select>
+
+    <insert id="addMessage" useGeneratedKeys="true" parameterType="com.halfopen.ssm.bean.Message"
+            keyProperty="id">
+        insert into message (username,content)
+        values (#{username},#{content})
+    </insert>
+
+    <delete id="deleteMessage">
+        delete from message WHERE id=#{id}
+    </delete>
+</mapper>
