@@ -42,7 +42,7 @@
 
             </ul>
         </nav>
-        <h3 class="text-muted">许愿墙- Web软件开发课程作业</h3>
+        <h3 style="color: white" class="text-muted">许愿墙- Web软件开发课程作业</h3>
     </div>
 
     <script>
