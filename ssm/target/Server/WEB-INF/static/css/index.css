@@ -3,8 +3,7 @@
     padding: 0px;
 }
 body{
-    -webkit-linear-gradient(top, rgba(9, 45, 34, 0.2) 0%, rgb(55, 148, 192) 120%);
-    background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+    background-image:url(http://bizhi.cnanzhi.com/upload/bizhi/2014/1202/14174919017639.jpg);
     font-family: '微软雅黑', sans-serif;
     font-size: 16px;
     position: relative;

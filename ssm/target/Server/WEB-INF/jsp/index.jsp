@@ -133,18 +133,14 @@
                 type: "GET",
                 url: "getMessages",
                 success: function (data) {
-                    //alert(data);
-                    data = JSON.parse(data);
+                    console.log(data);
+                    //data = JSON.parse(data);
                     $.each(data, function (i,v) {
                         createItem(v.username, v.content, v.id);
                     });
                 }
             });
 
-//            var tests = ['道友，还处在凝气期吗？', 'I have a dream...', '路漫漫其修远兮。。。', '与自己为敌，与自己为友', '脚本源码下载', '脚本之家', '既然选择了远方，便只顾风雨兼程！'];
-//            $.each(tests, function (i,v) {
-//                createItem(v);
-//            });
 
             // 绑定输入框
             $('#input').keydown(function (e) {

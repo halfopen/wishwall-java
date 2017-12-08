@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @Controller
@@ -32,20 +33,21 @@ public class IndexController {
         return "login";
     }
 
-    @RequestMapping(value = "getMessages" , method = RequestMethod.GET)
+    @RequestMapping(value = "getMessages" , method = RequestMethod.GET, produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String getMessages(){
+    public String getMessages(HttpServletResponse response){
+        response.setContentType("text/plain; charset=UTF-8");
         return JSON.toJSONString(messageService.getMessages());
     }
 
 
-    @RequestMapping(value = "addMessage" , method = RequestMethod.GET)
+    @RequestMapping(value = "addMessage" , method = RequestMethod.GET, produces = "application/json; charset=utf-8")
     @ResponseBody
     public String addMessage(HttpServletRequest request, @RequestParam String content){
         HttpSession session = request.getSession();
         Message message = new Message();
         if(null==session.getAttribute("username")) {
-            message.setUsername("somebody");
+            message.setUsername("匿名");
         }
         else{
             message.setUsername((String)session.getAttribute("username"));
