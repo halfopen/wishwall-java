@@ -1,10 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="./base/header.jsp" />
-<link rel="stylesheet" href="/ssm/css/signin.css"/>
+<link rel="stylesheet" href="css/signin.css"/>
 <div class="container">
 
     <div class="form-signin">
-        <h2 class="form-signin-heading">请先登录</h2>
+        <h2 style="color:white" class="form-signin-heading">请先登录</h2>
         <label for="inputName" class="sr-only">用户名</label>
         <input type="text" id="inputName" class="form-control" placeholder="请输入用户名" required="" autofocus="">
         <label for="inputPassword" class="sr-only">密码</label>
