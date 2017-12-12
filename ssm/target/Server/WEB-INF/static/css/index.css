@@ -11,10 +11,14 @@ body{
     left: 0px;
     bottom: 0px;
     right: 0px;
+
+    height: 100%;
+    position: absolute;
+
 }
 .item {
     width: 200px;
-    height: 200px;
+    /*height: 200px;*/
     line-height: 30px;
     -webkit-border-bottom-left-radius: 20px 500px;
     -webkit-border-bottom-right-radius: 500px 30px;
@@ -27,17 +31,22 @@ body{
     -moz-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
 }
 #container p{
-    height: 80px;
+/*    height: 80px;*/
     margin: 30px 10px;
     overflow: hidden;
     word-wrap: break-word;
     line-height: 1.5;
 }
+
+#container{
+	height:55%;
+}
+
 #container a{
     text-decoration: none;
     color: white;
     position: relative;
-    left: 150px;
+/*    left: 150px;*/
     coler: red;
     font-size: 14px;
 }
@@ -51,4 +60,404 @@ body{
     width: 300px;
     margin: 85px auto;
     font-size: 20px;
+}
+
+      *, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: radial-gradient(#222222, #000000);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.light-1 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.15s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf63;
+}
+
+.light-2 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.825s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf9c40;
+}
+
+.light-3 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.71s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #7840bf;
+}
+
+.light-4 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.74s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf9c40;
+}
+
+.light-5 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.515s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #9640bf;
+}
+
+.light-6 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.675s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf4057;
+}
+
+.light-7 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.515s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #59bf40;
+}
+
+.light-8 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.855s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #407abf;
+}
+
+.light-9 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.435s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf54;
+}
+
+.light-10 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.735s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #8f40bf;
+}
+
+.light-11 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.695s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #87bf40;
+}
+
+.light-12 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.455s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #404dbf;
+}
+
+.light-13 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.955s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #6140bf;
+}
+
+.light-14 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.675s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #6140bf;
+}
+
+.light-15 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.955s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #4091bf;
+}
+
+.light-16 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.125s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40b8bf;
+}
+
+.light-17 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.765s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #4099bf;
+}
+
+.light-18 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.79s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #96bf40;
+}
+
+.light-19 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.195s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #61bf40;
+}
+
+.light-20 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.175s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #4082bf;
+}
+
+.light-21 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.9s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #8740bf;
+}
+
+.light-22 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.985s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf7d40;
+}
+
+.light-23 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.33s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf6640;
+}
+
+.light-24 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.205s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bfb0;
+}
+
+.light-25 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.67s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bfa8;
+}
+
+.light-26 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.27s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf4047;
+}
+
+.light-27 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.05s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40b8bf;
+}
+
+.light-28 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.09s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40a8bf;
+}
+
+.light-29 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.015s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf8540;
+}
+
+.light-30 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.955s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf7540;
+}
+
+.light-31 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.105s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf8a;
+}
+
+.light-32 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.995s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bd40bf;
+}
+
+.light-33 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.045s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf4066;
+}
+
+.light-34 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.915s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #6140bf;
+}
+
+.light-35 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.195s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40a8bf;
+}
+
+.light-36 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.75s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf409c;
+}
+
+.light-37 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.315s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #9e40bf;
+}
+
+.light-38 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.32s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #52bf40;
+}
+
+.light-39 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.945s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #4240bf;
+}
+
+.light-40 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.465s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #8fbf40;
+}
+
+.light-41 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.64s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf4040;
+}
+
+.light-42 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.69s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #a640bf;
+}
+
+.light-43 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.635s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf45;
+}
+
+.light-44 {
+  animation: light 4s linear infinite;
+  animation-delay: 3s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf99;
+}
+
+.light-45 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.48s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf4740;
+}
+
+.light-46 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.185s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bfba40;
+}
+
+.light-47 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.545s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #59bf40;
+}
+
+.light-48 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.985s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bfb340;
+}
+
+.light-49 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.545s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #9ebf40;
+}
+
+.light-50 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.805s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf4d;
+}
+
+.light-51 {
+  animation: light 4s linear infinite;
+  animation-delay: 3.305s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #40bf6b;
+}
+
+.light-52 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.18s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf405e;
+}
+
+.light-53 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.95s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #52bf40;
+}
+
+.light-54 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.465s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #8740bf;
+}
+
+.light-55 {
+  animation: light 4s linear infinite;
+  animation-delay: 0.345s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #87bf40;
+}
+
+.light-56 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.6s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #8040bf;
+}
+
+.light-57 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.02s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #5940bf;
+}
+
+.light-58 {
+  animation: light 4s linear infinite;
+  animation-delay: 4.845s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #bf40ab;
+}
+
+.light-59 {
+  animation: light 4s linear infinite;
+  animation-delay: 1.205s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #5240bf;
+}
+
+.light-60 {
+  animation: light 4s linear infinite;
+  animation-delay: 2.905s;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 40px #69bf40;
+}
+
+.light{
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0;
+  
+  border-radius: 50%;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
+  }
 }

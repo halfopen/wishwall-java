@@ -20,7 +20,7 @@
             if($("#islogin").attr("islogin")!="true"){
                 $('<div class="item rotateIn animated"><p>'+name+':'+ text +'</p></div>').css({ 'background': color }).appendTo(container).drag();
             }else{
-                $('<div class="item rotateIn animated"><p>'+name+':'+ text +'</p><a id="'+id+'"  href="javascript:void(0);">关闭</a></div>').css({ 'background': color }).appendTo(container).drag();
+                $('<div class="item rotateIn animated"><p>'+name+':'+ text +'</p><a id="'+id+'"  href="javascript:void(0);">删除</a></div>').css({ 'background': color }).appendTo(container).drag();
             }
         };
 
@@ -114,7 +114,7 @@
 
             container = $('#container');
 
-            // 绑定关闭事件
+            // 绑定删除事件
             container.on('click','a',function () {
 
                 $(this).parent().remove();
@@ -126,7 +126,7 @@
                         console.log(data);
                     }
                 });
-            }).height($(window).height() -204);
+            }).height($(window).height() -350);
 
 
             $.ajax({
@@ -155,7 +155,7 @@
                             url: "addMessage?content="+value,
                             success: function (data) {
                                 console.log(data);
-                                data = JSON.parse(data);
+                                //data = JSON.parse(data);
                                 createItem(data.username, data.content, data.id);
                             }
 

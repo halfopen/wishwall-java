@@ -26,6 +26,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -62,3 +63,66 @@
 
         });
     </script>
+
+<div  style="height:10px">
+<span class='light light-1'></span>
+  <span class='light light-2'></span>
+  <span class='light light-3'></span>
+  <span class='light light-4'></span>
+  <span class='light light-5'></span>
+  <span class='light light-6'></span>
+  <span class='light light-7'></span>
+  <span class='light light-8'></span>
+  <span class='light light-9'></span>
+  <span class='light light-10'></span>
+  <span class='light light-11'></span>
+  <span class='light light-12'></span>
+  <span class='light light-13'></span>
+  <span class='light light-14'></span>
+  <span class='light light-15'></span>
+  <span class='light light-16'></span>
+  <span class='light light-17'></span>
+  <span class='light light-18'></span>
+  <span class='light light-19'></span>
+  <span class='light light-20'></span>
+  <span class='light light-21'></span>
+  <span class='light light-22'></span>
+  <span class='light light-23'></span>
+  <span class='light light-24'></span>
+  <span class='light light-25'></span>
+  <span class='light light-26'></span>
+  <span class='light light-27'></span>
+  <span class='light light-28'></span>
+  <span class='light light-29'></span>
+  <span class='light light-30'></span>
+  <span class='light light-31'></span>
+  <span class='light light-32'></span>
+  <span class='light light-33'></span>
+  <span class='light light-34'></span>
+  <span class='light light-35'></span>
+  <span class='light light-36'></span>
+  <span class='light light-37'></span>
+  <span class='light light-38'></span>
+  <span class='light light-39'></span>
+  <span class='light light-40'></span>
+  <span class='light light-41'></span>
+  <span class='light light-42'></span>
+  <span class='light light-43'></span>
+  <span class='light light-44'></span>
+  <span class='light light-45'></span>
+  <span class='light light-46'></span>
+  <span class='light light-47'></span>
+  <span class='light light-48'></span>
+  <span class='light light-49'></span>
+  <span class='light light-50'></span>
+  <span class='light light-51'></span>
+  <span class='light light-52'></span>
+  <span class='light light-53'></span>
+  <span class='light light-54'></span>
+  <span class='light light-55'></span>
+  <span class='light light-56'></span>
+  <span class='light light-57'></span>
+  <span class='light light-58'></span>
+  <span class='light light-59'></span>
+  <span class='light light-60'></span>
+</div>
