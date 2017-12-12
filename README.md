@@ -1,7 +1,7 @@
 # wishwall-java
 
 
-复旦大学Web软件开发课程作业 使用smm开发
+复旦大学Web软件开发课程作业 使用smm+redis开发
 
 功能：
 - 发表心愿
