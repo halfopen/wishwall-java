@@ -1,5 +1,7 @@
 package com.halfopen.ssm.bean;
 
+import org.springframework.context.annotation.Bean;
+
 public class Message {
     private Short id;
 

@@ -3,10 +3,13 @@ package com.halfopen.ssm.controller.user;
 
 import com.halfopen.ssm.bean.User;
 import com.halfopen.ssm.controller.ResultBuilder;
+import com.halfopen.ssm.service.RedisService;
 import com.halfopen.ssm.service.UserService;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,6 +30,8 @@ public class UserController{
     @Resource
     UserService userService;
 
+    @Resource
+    RedisService redisService;
     @RequestMapping(value = "/login", method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
     public String login(HttpServletRequest request, @RequestParam String name,@RequestParam String password) throws IOException {
@@ -36,9 +41,9 @@ public class UserController{
 
         System.out.println(userService);
 
-        HttpSession session = request.getSession();
+        final HttpSession session = request.getSession();
 
-        User usobj = userService.getUser(name, password);
+        final User usobj = userService.getUser(name, password);
         ObjectMapper objectMapper = new ObjectMapper();
 
         System.out.println(usobj);
@@ -48,6 +53,8 @@ public class UserController{
             rb.setData(usobj.toString());
             //rb.setMessage("登录成功");
             session.setAttribute("username",usobj.getName());
+            // 把用户信息存入redis中
+            redisService.setValue(session.getId(), usobj.getName());
         }else{
             rb.setResult(ResultBuilder.FAIL);
             //rb.setMessage("用户不存在或密码错误");
@@ -64,8 +71,9 @@ public class UserController{
 
         ResultBuilder rb = new ResultBuilder("1", "success", "");
         System.out.println(userService);
-        HttpSession session = request.getSession();
-        String username = (String) session.getAttribute("username");
+        final HttpSession session = request.getSession();
+        String username = redisService.getValue(session.getId());
+
         ObjectMapper objectMapper = new ObjectMapper();
         if (username!=null && username.equals(name)){
 

@@ -12,6 +12,7 @@
 
     <!-- 自动扫描  @Controller-->
     <context:component-scan base-package="com.halfopen.ssm.controller"/>
+
     <!-- 启用spring mvc 注解 -->
     <context:annotation-config/>
     <mvc:annotation-driven/>
@@ -24,6 +25,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:host-name="server" p:port="6379" />
 
 </beans>

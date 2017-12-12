@@ -13,7 +13,7 @@
     <context:component-scan base-package="com.halfopen.ssm.service" />
 
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:jdbc.properties"/>
+        <property name="location" value="classpath:property/jdbc.properties"/>
     </bean>
 
     <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
@@ -57,8 +57,6 @@
 
     <!-- 该 BeanPostProcessor 将自动起作用，对标注 @Autowired 的 Bean 进行自动注入 -->
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-
-    <bean id="user" class="com.halfopen.ssm.bean.User" />
 
     <!--动态代理实现 不用写dao的实现 -->
     <bean id="MapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">

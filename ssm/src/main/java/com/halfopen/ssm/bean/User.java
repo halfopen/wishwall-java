@@ -1,6 +1,10 @@
 package com.halfopen.ssm.bean;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
+
+
 
     String name;
     String password;
